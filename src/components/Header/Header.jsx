@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 import ButtonCustom from "../Button/Button";
 import { useTranslation } from "react-i18next";
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
-import { Button, ButtonGroup } from "@nextui-org/react";
+import { useContext } from "react";
+import { ThemeContext } from "@/src/contexts/ThemeContext";
+import { Switch } from "../../../components/ui/switch";
 
 function Header() {
    const { t } = useTranslation();
+   const { theme, toggleTheme } = useContext(ThemeContext);
    const navList = [
       {
          name: "Home",
@@ -60,8 +63,17 @@ function Header() {
          <nav>
             <ul className="header__nav-list">{mappedNavList}</ul>
          </nav>
+         <div className="flex flex-col-reverse mr-20 items-center">
+            <Switch
+               id="darkmode"
+               onCheckedChange={toggleTheme}
+               className="text-text-primary"
+            />
+            <label htmlFor="darkmode" className="text-text-primary">
+               Dark Mode
+            </label>
+         </div>
          <LanguageSwitch options={options} />
-         <Button>Next UI button</Button>
          <ButtonCustom
             classes="button login-button"
             name="Login"

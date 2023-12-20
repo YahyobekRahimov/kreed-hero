@@ -1,9 +1,10 @@
 .home__container {
    display: flex;
+   background: transparent;
 }
 
 .home__title {
-   color: #171a31;
+   color: var(--text-primary);
    font-family: Poppins;
    font-size: 62px;
    font-style: normal;
@@ -20,4 +21,5 @@
 }
 .home__description {
    margin-bottom: 40px;
+   color: var(--text-primary);
 }
