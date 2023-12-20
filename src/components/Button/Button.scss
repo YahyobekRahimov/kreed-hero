@@ -1,0 +1,35 @@
+.button {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.login-button {
+   border-radius: 10px;
+   background: var(--bg-tertiary);
+   color: var(--text-tertiary);
+   padding: 10px 45px;
+   text-align: center;
+   font-size: 14px;
+   font-weight: 500;
+   font-family: Poppins;
+   &:hover {
+      background-color: #515259;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 5px 20px 0px;
+   }
+}
+
+.get-started-button {
+   padding: 19px 48px;
+   background-color: var(--bg-tertiary);
+   border-radius: 10px;
+   color: var(--text-tertiary);
+   text-align: center;
+   font-family: "Poppins";
+   font-size: 16px;
+   font-weight: 500;
+   &:hover {
+      background-color: #515259;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 5px 20px 0px;
+   }
+}

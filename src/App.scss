@@ -1,0 +1,41 @@
+// Variables
+
+:root {
+   --text-primary: #171a31;
+   --text-secondary: rgba(23, 26, 49, 0.7);
+   --text-tertiary: #fff;
+
+   --bg-primary: #fff;
+   --bg-secondary: #f8f8fa;
+   --bg-tertiary: #171a31;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   width: 100%;
+   max-width: 1440px;
+   margin-right: auto;
+   margin-left: auto;
+   padding-right: 165px;
+   padding-left: 165px;
+}
+
+body {
+   font-family: "Poppins";
+}
+
+.main {
+   background-color: var(--bg-primary);
+}
+
+@media (max-width: 1440px) {
+   .container {
+      padding-right: 10.3125rem;
+      padding-left: 10.3125rem;
+   }
+}
